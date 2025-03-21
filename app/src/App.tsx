@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useOktaAuth } from '@okta/okta-react';  
 import { SuperblocksEmbed } from "@superblocksteam/embed-react";
 import config from "./config";
 import "./App.css";
 
 const App = () => {
-  const path = `${window.location.pathname}${window.location.search}`;
+  const location = useLocation();
   const { authState, oktaAuth } = useOktaAuth();
   const [superblocksToken, setSuperblocksToken] = useState();
+
+  const path = `${location.pathname}${location.search}`;
 
   // Okta Authentication to React App
   const login = async () => {

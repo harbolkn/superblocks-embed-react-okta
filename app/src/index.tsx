@@ -18,9 +18,8 @@ const Root = () => {
   return (
     <Security oktaAuth={oktaAuth} restoreOriginalUri={restoreOriginalUri}>
       <Routes>
-        <Route path='/' element={<App />} />
         <Route path='/login/callback' element={<LoginCallback />} />
-        <Route path='*' element={<Navigate to='/' />} />
+        <Route path='*' element={<App />} />
       </Routes>
     </Security>
   );
