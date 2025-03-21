@@ -38,9 +38,14 @@ exports.handler = async (event) => {
         const user = {
             email: oktaJwt.claims.email || oktaJwt.claims.sub,
             name: idClaims.name || idClaims.preferred_username,
-            groupIds: [
-                '46943925-7d8e-440a-aa42-67969f1701fc'
-            ]
+
+            // Use Superblocks platform user credentials
+            // Comment this out if user should be treated as external to organization
+            isSuperblocks: true,
+
+            // Uncomment groupIds and add groups to associated the user with
+            // Groups listed should have **End-user** access to applications being embedded
+            // groupIds: []
         }
 
         console.log('Sending token to Superblocks');
