@@ -1,6 +1,6 @@
-# Superblocks Authentication Wrapper
+# Superblocks Embed + React + Okta Login Example
 
-This repository contains a React application and AWS Lambda function for white-labeling a multi-page Superblocks Application with custom authentication using Okta.
+This example shows how to use the Superblocks Embed SDK + Okta React Library to provide a custom login flow to a Superblocks application. After the user authenticates with Okta, an AWS Lambda Function is used to authenticate the user with Superblocks. Routing is configured to sync the Superblocks Apps routing with the browser URL.
 
 ## Directory Structure
 
