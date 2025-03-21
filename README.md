@@ -32,11 +32,11 @@ To get started with this project, follow these steps:
 
 3. **Create Okta OIDC Application**
 
-   Follow docs for creating an Okta OIDC-based Single Page Application
+   Follow docs to [Create an Okta OIDC-based Single Page Application](docs/setup-okta-app.md)
 
 4. **Deploy Lambda Function**
 
-   Follow docs for deploying the lambda function and configuring API Gateway.
+   Follow docs to [Deploy Lambda Function](docs/deploy-lambda.md) and configuring API Gateway to handle [Embedded SSO Authentication](https://docs.superblocks.com/applications/embedded-apps/authentication).
 
 5. **Update App Config**
 
