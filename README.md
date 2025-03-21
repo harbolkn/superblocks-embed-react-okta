@@ -36,7 +36,7 @@ To get started with this project, follow these steps:
 
 4. **Deploy Lambda Function**
 
-   Follow docs to [Deploy Lambda Function](docs/deploy-lambda.md) and configuring API Gateway to handle [Embedded SSO Authentication](https://docs.superblocks.com/applications/embedded-apps/authentication).
+   Follow docs to [Deploy Lambda Function](docs/deploy-lambda.md) and configuring API Gateway to handle [Embedded SSO Authentication](https://docs.superblocks.com/applications/embedded-apps/authentication)
 
 5. **Update App Config**
 
