@@ -54,15 +54,8 @@ const App = () => {
     }
   }
 
-  // Handler to sync browser URL w/ Superblocks App paths
-  function extractCustomRoute(url: string) {
-    const regex = /https:\/\/app\.superblocks\.com\/embed\/applications\/([a-f0-9\-]+)(\/.*)/;
-    const match = url.match(regex);
-    return match && match[2] ? match[2] : '/';
-  }
-
   const handleNavigation = (event: any) => {
-    let route = extractCustomRoute(event.url);
+    let route = `${event.pathname}${event.search}`;
     console.log(`User navigated to: ${route}`);
     window.history.pushState({ path: route }, '', route);
   }
